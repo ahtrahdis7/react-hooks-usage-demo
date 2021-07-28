@@ -4,6 +4,8 @@ import HookUseEffect from './hooks/use_effect'
 import HookUseContext from './hooks/use_context'
 import HookUseRef from './hooks/use_ref'
 import HookUseReducer from './hooks/use_reducer'
+import HookUseMemo from './hooks/use_memo'
+import HookUseCallback from './hooks/use_callback'
 
 function App() {
   return (
@@ -41,7 +43,24 @@ function App() {
                 <HookUseReducer />
               </li>
               <li>
+                <h3>useMemo</h3>
+                <p>useMemo is a higher-order component that takes a function as an argument and returns a memoized version of that function.</p>
+                <HookUseMemo />
+              </li>
+              <li>
+                <h3>useCallback</h3>
+                <p>In order to <i>Memoize</i> a whole function, <i>useCallback</i> is used.</p>
+                <p>
+                  The <i>showCount</i> function is called from multiple childs in the same DOM Tree, they will help prevent <i>un-necessary</i> re-renders of the same object as they will
+                  be using the same function object.
+                </p>
+                <HookUseCallback />
+              </li>
+              <li>
                 <h3>useLayoutEffect</h3>
+                <p>It is similar to <i>useEffect</i> with a small difference.  <br></br>
+                It runs after <i>render</i> but before it it is visually updated. <br></br>
+                It blocks visual updates until the Callback exection is finished.</p>
               </li>
             </ol>
         </div>

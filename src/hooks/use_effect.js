@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-export default function FunctionUsingUseStateUseEffect(){
+export default function UseStateUseEffect(){
     const [count, setCount] = useState(0);
     useEffect(() => {
         console.log('Use Effect is called');
