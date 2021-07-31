@@ -16,8 +16,8 @@ export default function FunctionUsingUseState(){
     return (
         <div>
             <h3>{count}</h3>
-            <button style={{fontSize: 30, width: 40}} onClick={() => dispatch({type: 'INCREMENT'})}>+</button>
             <button style={{fontSize: 30, width: 40}} onClick={() => dispatch({type: 'DECREMENT'})}>-</button>
+            <button style={{fontSize: 30, width: 40}} onClick={() => dispatch({type: 'INCREMENT'})}>+</button>
         </div>
     );
 }

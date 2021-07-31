@@ -1,15 +1,18 @@
 .App {
   text-align: left;
   padding: 30px;
+  margin-right: 50%;
 }
 
 p {
   font-size: 15px;
 }
 
-li { 
-  padding: 5px;
-  margin: 5px;
+div.hook { 
+  padding: 10px;
+  margin: 10px;
+  background-color: rgb(242, 242, 242);
+  border-radius: 5px;
 }
 
 .App-logo {
