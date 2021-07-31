@@ -13,6 +13,7 @@ div.hook {
   margin: 10px;
   background-color: rgb(242, 242, 242);
   border-radius: 5px;
+  box-shadow: 1px 1px #888888;
 }
 
 .App-logo {
